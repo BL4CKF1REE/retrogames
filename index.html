@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETROGAMES </title>
+    <link rel="stylesheet" href="style.css">
+
+<body>
+    <header>
+        <h1><a href="index.html">RETROGAMES</a></h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="desenvolvedores.html">Sobre nós</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>Bem-Vindo ao RETROGAMES!</h2> <br>
+                <h3>Com saudades de jogar aquele vídeogame de infância? Aqui é o lugar certo! Temos milhares de jogos
+                    retrô disponíveis!</h3> <br>
+            </article>
+        </section>
+
+        <div class="formulario">
+            <form onsubmit="event.preventDefault(); adicionarLinha();">
+                <div class="GameName">
+                    <label for="game">Nome do Game</label><br>
+                    <input type="text" name="game" id="game" name="game" placeholder="Digite o nome do game" required>
+                </div>
+                <br>
+                <div class="Console">
+                    <label for="console">Console</label>
+                    <br>
+                    <input type="text" id="console" name="console" placeholder="Ex: Super Nintendo, PS2..." required>
+                    <br><br>
+                    <button type="submit">Inserir</button>
+                </div>
+                <br>
+        </div>
+
+        </form>
+
+        <div class="tabela" id="tabela">
+            <table>
+                <caption>Lista de Games</caption>
+                <thead>
+                    <tr>
+                        <th>Game</th>
+                        <th>Console</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela">
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Fim da lista</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+
+    </main>
+    <footer>
+        <p>IFRN Campus Santa Cruz</p>
+        <br>
+        <p>Trabalho de Autoria Web</p>
+        <br>
+        <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
+        <br>
+        <p>Autores: Ávila Sophia Romano Dério de Carvalho, Júlio César Araújo da Silva e Maria de Jesus Silva dos Santos
+        </p>
+        <br>
+        <p>© RETROGAMES 2025 Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
